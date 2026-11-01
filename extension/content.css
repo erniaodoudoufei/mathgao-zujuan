@@ -1,0 +1,38 @@
+/* Scope every rule to detected question bodies; website controls stay untouched. */
+.mgq-body {
+  font-family: var(--mgq-font-family) !important;
+  font-size: var(--mgq-font-size) !important;
+  line-height: var(--mgq-line-height) !important;
+  color: var(--mgq-ink) !important;
+  background-color: var(--mgq-paper) !important;
+  overflow-wrap: anywhere;
+}
+.mgq-body :where(span,p,div,td,th,a,li,b,strong,em,i,u,font) {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+}
+.mgq-body :where(span,p,div,td,th,a,li,b,strong,u,font) {
+  font-family: inherit !important;
+}
+.mgq-body :where(i,em) { font-family: "Times New Roman", serif !important; }
+.mgq-body :where(sup,sub) { font-size: .72em !important; line-height: 0 !important; }
+.mgq-body img { max-width: 100%; object-fit: contain; }
+.mgq-body img[data-mgq-formula] {
+  width: var(--mgq-image-width) !important;
+  height: auto !important;
+  vertical-align: middle !important;
+}
+.mgq-body img:not([data-mgq-formula]) { height: auto !important; }
+.mgq-body table { max-width: 100%; }
+.mgq-launch {
+  display: block !important; margin: 8px 0 12px !important;
+  padding: 5px 12px !important; border: 1px solid #c9d8e6 !important;
+  border-radius: 6px !important; background: #f6faff !important; color: #315c78 !important;
+  font: 13px/1.6 "Noto Sans SC", "Microsoft YaHei", sans-serif !important;
+  cursor: pointer !important;
+}
+.mgq-launch:hover { background: #e9f3ff !important; }
+.mgq-page body { background-color: var(--mgq-page) !important; }
+.mgq-page .mgq-surface { background-color: var(--mgq-paper) !important; }
+.mgq-page .mgq-body :where(span,p,div,td,th) { background-color: transparent !important; }

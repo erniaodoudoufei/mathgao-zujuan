@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "MathGao 组卷题面美化",
+  "version": "1.1.0",
+  "description": "清爽题面、公式等比缩放与单题展示，方便截图到 OneNote。",
+  "permissions": ["storage"],
+  "action": { "default_popup": "popup.html", "default_title": "组卷题面美化" },
+  "content_scripts": [{
+    "matches": ["https://zujuan.xkw.com/*"],
+    "js": ["settings.js", "content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }]
+}

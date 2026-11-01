@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>组卷题面美化</title><link rel="stylesheet" href="popup.css"></head>
+<body><h1>组卷题面美化</h1><p>清爽题面 · 方便截图</p>
+<label class="switch"><span>原页自动美化</span><input type="checkbox" id="enabled"></label>
+<label>字体<select id="font"></select></label>
+<label>页面与题面背景<select id="background"></select></label>
+<label>文字颜色<select id="ink"></select></label>
+<label>字号 <output id="fontSizeValue"></output><input id="fontSize" type="range" min="16" max="32" step="1"></label>
+<label>行距 <output id="lineHeightValue"></output><input id="lineHeight" type="range" min="1.4" max="2.2" step="0.1"></label>
+<label>单题展示宽度 <output id="widthValue"></output><input id="width" type="range" min="640" max="1200" step="20"></label>
+<button id="reset">恢复默认值</button><p id="status" role="status">正在读取设置…</p>
+<small>打开组卷网后，点击题目旁的“单题展示”。公式保留原图颜色。首次安装或更新后请刷新页面。</small>
+<script src="settings.js"></script><script src="popup.js"></script></body></html>

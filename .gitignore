@@ -1,0 +1,15 @@
+# Local previews, captured question content and session notes
+/预览/
+/验收记录.md
+/tests/real-example.html
+/tests/grass-preset.js
+
+# Release archives are attached to GitHub Releases
+/*.zip
+/dist/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+.env.*
